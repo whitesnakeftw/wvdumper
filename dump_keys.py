@@ -13,8 +13,8 @@ logging.basicConfig(
 
 def main():
     parser = argparse.ArgumentParser(description='Android Widevine L3 dumper.')
-    parser.add_argument('--cdm-version', help='The CDM version of the device e.g. \'14.0.0\'', default='14.0.0')
-    parser.add_argument('--function-name', help='The name of the function to hook to retrieve the private key.', default='')
+    parser.add_argument('--cdm-version', help='The CDM version of the device e.g. \"14.0.0\"', default="14.0.0")
+    parser.add_argument('--function-name', help='The name of the function to hook to retrieve the private key.', default="")
     parser.add_argument('--module-name', 
         nargs='+',
         type=str,
